@@ -1,0 +1,47 @@
+body {
+ background-image: url('https://images.unsplash.com/photo-1576613775061-75e52d6e6b0e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Rvcm0lMjBjaXR5fGVufDB8fDB8fHww');
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  margin-top: 100px;
+  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/04/55/weather-background-vector-20455.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.icon {
+  position: relative;
+  top: -50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+@media screen and (max-width: 500px) {
+ body{ background-position: unset;
+ }
+}
