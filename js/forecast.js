@@ -13,4 +13,4 @@ const getData = async (city) =>{
     return data
 }
 
-
+  

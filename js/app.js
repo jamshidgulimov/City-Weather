@@ -39,7 +39,7 @@ const getWeather = async (city) =>{
     const data = await getData(city)
 return data
 }
-
+ 
 
 // get City
 changeLocation.addEventListener('submit', (e)=>{
