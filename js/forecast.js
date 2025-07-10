@@ -1,5 +1,4 @@
 
-
 const KEY = '8381bde3b01a162ed81d52c0f43bb07d'
 
 const getData = async (city) =>{
@@ -9,8 +8,6 @@ const getData = async (city) =>{
     const req = await fetch(base + query)
     const data = await req.json()
       loader(false)
-
     return data
 }
-
 

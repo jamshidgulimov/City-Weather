@@ -6,8 +6,6 @@ const overlay = document.getElementById('overlay')
 
 changeLocation.city.focus()
 
-
-
 function loader(params) {
     if(params){
         overlay.classList.remove('d-none')
@@ -16,8 +14,6 @@ function loader(params) {
         overlay.classList.add('d-none')
     }   
 }
-
-// app UI
 const appUi = (weather) =>{
 console.log(weather);
 
@@ -30,23 +26,15 @@ details.innerHTML =`
           </div>
 `
 weatherIcon.src = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
-
 }
-
-
-// get Weather
 const getWeather = async (city) =>{
     const data = await getData(city)
 return data
 }
 
-
-// get City
 changeLocation.addEventListener('submit', (e)=>{
     e.preventDefault()
-
     const cityName = changeLocation.city.value.trim()
     changeLocation.reset()
-
     getWeather(cityName).then((data) => appUi(data))
 })
